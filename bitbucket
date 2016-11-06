@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+
+<?php
+
+if (file_exists(__DIR__ . '/../../autoload.php')) {
+    require __DIR__ . '/../../autoload.php';
+} else {
+    require __DIR__ . '/vendor/autoload.php';
+}
+
+define('BITBUCKET_KEY', '2HkKtyRFmmwK6XLvdk');
+define('BITBUCKET_SECRET', 'xxypg35tH3jRcsCfacWHbJZyqyCRXymW');
+
+$app = new Symfony\Component\Console\Application('Bitbucket Command Line Interface.', '0.1.0');
+
+$app->add(new Sasaya\Bitbucket\LoginCommand);
+$app->add(new Sasaya\Bitbucket\ApproveCommand);
+$app->add(new Sasaya\Bitbucket\UnapproveCommand);
+
+$app->run();

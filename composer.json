@@ -1,0 +1,20 @@
+{
+    "name": "sasaya/bitbucket-cli",
+    "description": "Bitbucket Command Line Interface.",
+    "authors": [{
+        "name": "Sasaya",
+        "email": "storyn26383@gmail.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "Sasaya\\Bitbucket\\": "src/"
+        }
+    },
+    "bin": [
+        "bitbucket"
+    ],
+    "require": {
+        "symfony/console": "^3.1",
+        "guzzlehttp/guzzle": "^6.2"
+    }
+}
