@@ -1,6 +1,7 @@
 {
     "name": "sasaya/bitbucket-cli",
     "description": "Bitbucket Command Line Interface.",
+    "license": "MIT",
     "authors": [{
         "name": "Sasaya",
         "email": "storyn26383@gmail.com"
